@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Memo Pad</string>
+    <string name="delBTNText">DELETE MEMO</string>
+    <string name="addBTNText">ADD MEMO</string>
+</resources>

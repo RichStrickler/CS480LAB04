@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/addmemoInput"
+        android:layout_width="409dp"
+        android:layout_height="46dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.6" />
+
+    <EditText
+        android:id="@+id/delmemoInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addBTN"
+        app:layout_constraintWidth_percent="0.6" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/output"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/delBTN" />
+
+    <Button
+        android:id="@+id/delBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delBTNText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/delmemoInput" />
+
+    <Button
+        android:id="@+id/addBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/addBTNText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addmemoInput" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
